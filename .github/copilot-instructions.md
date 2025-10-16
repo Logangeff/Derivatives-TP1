@@ -318,30 +318,7 @@ options['date'] == pd.Timestamp('2020-01-17')  ✗ Returns 0 rows
 
 ## Helpful Commands Reference
 
-### Code Block Format (Always Use!)
-```python
-################
-## Load and Filter Data ##
-################
-jan17_data = options[options['date'] == dt.date(2020, 1, 17)]
-mar20_data = options[options['date'] == dt.date(2020, 3, 20)]
 
-################
-## Create Plot ##
-################
-plt.scatter(jan17_data['YTM'], jan17_data['price'], c='blue', label='Jan 17')
-plt.scatter(mar20_data['YTM'], mar20_data['price'], c='red', label='Mar 20')
-plt.xlabel('Time to Maturity (Years)')
-plt.ylabel('Price ($)')
-plt.legend()
-plt.show()
-
-################
-## Print Statistics ##
-################
-print(f"Jan 17 Mean: {jan17_data['price'].mean():.4f}")
-print(f"Mar 20 Mean: {mar20_data['price'].mean():.4f}")
-```
 
 ### Filtering
 ```python
